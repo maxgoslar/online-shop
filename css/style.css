@@ -242,7 +242,7 @@ body {
 
 .products__item_price {
     padding: 10px;
-    color: var(--pink-txta);
+    color: var(--pink-txt);
 }
 
 .products__button {}
