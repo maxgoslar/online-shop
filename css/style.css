@@ -101,15 +101,30 @@ body {
     padding: 0 0 0 92px;
     background-color: var(--pink-bkg);
     flex-grow: 1;
+    position: relative;
 }
 
-.brand__title {
 
+
+.brand__title {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     color: var(--black);
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 100%;
+    background-color: var(--pink-txt);
+    position: absolute;
+    top: 5px;
+    left: -30px;
+
 }
 
 .brand__subtitle {
@@ -218,6 +233,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 46px;
 }
 
 .products__item {
@@ -230,7 +246,13 @@ body {
     background-color: var(--gray-bkg);
 }
 
-.products__item_img {}
+
+
+
+.products__item_img {
+    width: 360px;
+    min-height: 420px;
+}
 
 .products__item_title {
     padding: 10px;
@@ -245,7 +267,23 @@ body {
     color: var(--pink-txt);
 }
 
-.products__button {}
+.products__button {
+    width: 210px;
+    height: 47px;
+    border-radius: 0px;
+    border: 1px solid var(--pink-txt);
+    background-color: var(--white-txt);
+    align-self: center;
+
+}
+
+.products__button-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--pink-txt);
+
+}
 
 .advantages {
     background-color: var(--black);
@@ -286,4 +324,45 @@ body {
     color: var(--white-txt);
     text-align: center;
 
+}
+
+
+.products__item-wrap {
+    position: relative;
+}
+
+.overlay {
+    width: 360px;
+    min-height: 420px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+
+    display: none;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.products__item:hover .button,
+.products__item:hover .overlay {
+    display: block;
+}
+
+
+.products__button:hover .products__button-text {
+    /* background-color: var(--pink-txt); */
+    color: var(--pink-bkg);
+}
+
+
+.products__button:hover {
+    background-color: var(--pink-txt);
 }
