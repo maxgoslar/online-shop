@@ -1,0 +1,14 @@
+@mixin font($font-size, $line-height, $font-weight, $font-style, $font-color) {
+    font-family: 'Lato';
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    color: $font-color;
+}
+
+@mixin flex-position($justify-content: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+}

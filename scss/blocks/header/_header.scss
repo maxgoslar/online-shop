@@ -1,0 +1,65 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    @include flex-position(space-between);
+    min-height: 75px;
+}
+
+// .header__logo-group {}
+
+// .header__nav-group {}
+
+
+.header__logo {
+    margin-right: 41px;
+}
+
+// .header__search {}
+
+.header__button {
+    margin-right: 33px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.header__button-icon {
+    fill: $white-txt;
+}
+
+.header__button:hover,
+.header__button:focus {
+    background-color: transparent;
+}
+
+.header__button:hover .header__button-icon,
+.header__button:focus .header__button-icon {
+    fill: $pink-txt;
+}
+
+
+
+.header__account {
+    margin-right: 33px;
+}
+
+// .header__buynow {}
+
+.header__menu {
+    display: none;
+}
+
+// .header__menu-title {}
+
+// .header__menu-list {}
+
+// .header__menu-item {}
+
+// .menu_subitem {}
+
+// .menu_subitem__title {}
+
+// .menu_subitem__list {}
+
+// .menu_subitem__item-link {}
