@@ -63,3 +63,17 @@
 // .menu_subitem__list {}
 
 // .menu_subitem__item-link {}
+
+@media (max-width: $mobile-width) {
+    .header__button {
+        margin-right: 0px;
+    }
+
+    .header__buynow {
+        display: none;
+    }
+
+    .header__account {
+        display: none;
+    }
+}
