@@ -1,0 +1,46 @@
+.advantages {
+
+    background-color: $black;
+
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: $container-width) {
+            flex-direction: column;
+            @include flex-position();
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 340px;
+
+        @media (max-width: $container-width) {
+            width: 300px;
+            height: 230px;
+            flex-direction: column;
+            @include flex-position();
+        }
+    }
+
+    &__item-img {
+        margin-bottom: 30px;
+    }
+
+    &__item-title {
+        @include font(20px, 24px, 400, $font-style, $white-txt);
+        margin-bottom: 16px;
+    }
+
+    &__item-text {
+        @include font(14px, 17px, 300, $font-style, $white-txt);
+        text-align: center;
+    }
+}
