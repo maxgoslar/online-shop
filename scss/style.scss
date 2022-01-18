@@ -1,0 +1,14 @@
+@import './variables';
+
+@import './mixins';
+@import './general';
+@import './reset';
+
+@import './blocks/header/header';
+
+@import './blocks/main/brand';
+@import './blocks/main/products';
+@import './blocks/main/sales';
+@import './blocks/main/advantages';
+
+@import './blocks/footer/footer';
