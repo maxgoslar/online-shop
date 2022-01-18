@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/roboto-regular.woff2') format("woff2"),
+        url('/fonts/roboto-regular.woff') format("woff");
+
+}
+
+
+@font-face {
+    font-family: "roboto";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/roboto-bold.woff2") format("woff2"),
+        url("/fonts/roboto-bold.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "roboto";
+    font-weight: 900;
+    font-style: normal;
+    src: url("/fonts/roboto-black.woff2") format("woff2"),
+        url("/fonts/roboto-black.woff") format("woff");
+
+}
+
+.regular {
+    font-family: "roboto";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold {
+    font-family: "roboto";
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.black {
+    font-family: "roboto";
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+body {
+    background: white;
+}
+
+.brdr {
+    border: 1px;
+    border-style: solid;
+}
+
+.col-md-12 {
+    display: none;
+}
+
+.image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.fas-pink-xl {
+    color: #ff00ff;
+    font-size: 50px;
+}
+
+.btn-pink {
+    color: #fff;
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+}
+
+.btn-pink:hover {
+    color: #fff;
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+}
+
+.btn-check:focus+.btn-pink,
+.btn-pink:focus {
+    color: #fff;
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+    box-shadow: 0 0 0 0.25rem rgba(212, 49, 253, 0.5);
+}
+
+.btn-check:checked+.btn-pink,
+.btn-check:active+.btn-pink,
+.btn-pink:active,
+.btn-pink.active,
+.show>.btn-pink.dropdown-toggle {
+    color: #fff;
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+}
+
+.btn-check:checked+.btn-pink:focus,
+.btn-check:active+.btn-pink:focus,
+.btn-pink:active:focus,
+.btn-pink.active:focus,
+.show>.btn-pink.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(212, 49, 253, 0.5);
+}
+
+.btn-pink:disabled,
+.btn-pink.disabled {
+    color: #fff;
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+}
